@@ -11,7 +11,7 @@ function App() {
 
   async function handleAddRepository() {
     const response = await api.post("/repositories", {
-      title: "Repository Node",
+      title: `Repository Node ${Date.now()}`,
       url: "www.github.com/repository-node",
       techs: ["node", "express"],
     });
